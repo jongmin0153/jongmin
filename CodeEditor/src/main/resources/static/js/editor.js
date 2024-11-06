@@ -349,9 +349,41 @@ let clickCount = 0;
 	        sidetab.classList.remove('expanded');
 	        clickCount = 0; // 클릭 횟수 초기화
 	    }
+
 	});
 
+// 탭 추가 이벤트
+
+	// 탭 추가 함수
+function addTab(tabName) {
+    const tabList = document.getElementById('tabList');
+
+    // 새로운 탭 아이템 생성
+    const newTab = document.createElement('li');
+    newTab.classList.add('tab-item');
+    newTab.innerHTML = `
+        <span>${tabName}</span>
+        <button class="tab-close" onclick="closeTab(this)">×</button>
+    `;
+
+    // 새로운 탭을 탭 목록에 추가
+    tabList.appendChild(newTab);
+}
+
+// 탭 닫기 함수
+function closeTab(button) {
+    const tabItem = button.parentElement;
+    tabItem.parentElement.removeChild(tabItem);
+}
+
+// 클릭 이벤트 리스너 추가
+document.querySelectorAll('.class, .interface, .txt-file, .file').forEach(item => {
+    item.addEventListener('click', () => {
+        addTab(item.querySelector('span').textContent); // 아이템의 텍스트 사용
+    });
+});
 	
+
 	
 	
 

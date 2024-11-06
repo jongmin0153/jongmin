@@ -32,28 +32,28 @@
 
                         <!-- 클래스, 인터페이스, 파일 항목들 -->
                         <div class="class">
-                            <button onclick="window.location.href='classPage.jsp'">
+                            <button>
                                 <img src="/editor/resources/image/icon/class.svg">
                                 <span class="white-text">test.java</span>
                             </button>
                         </div>
                         
                         <div class="interface">
-                            <button onclick="window.location.href='interfacePage.jsp'">
+                            <button onclick=>
                                 <img src="/editor/resources/image/icon/interface.svg">
                                 <span class="white-text">inter.java</span>
                             </button>
                         </div>
                         
                         <div class="txt-file">
-                            <button onclick="window.location.href='txt-filePage.jsp'">
+                            <button>
                                 <img src="/editor/resources/image/icon/txt.svg"> 
                                 <span class="white-text">test.txt</span>
                             </button>
                         </div>
                         
                         <div class="file">
-                            <button onclick="window.location.href='filePage.jsp'">
+                            <button>
                                 <img src="/editor/resources/image/icon/file.svg"> 
                                 <span class="white-text">file</span>
                             </button>
@@ -85,5 +85,9 @@
         <button class="explorer_sidetabButton">
             <img src="/editor/resources/image/icon/side.svg" alt="Scroll Icon" class="explorer_sidetabImg">
         </button>
-    </div>    
+    </div>
+
+
+    
+        
 </div>
