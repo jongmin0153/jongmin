@@ -1,4 +1,4 @@
-package com.test.editor.controller;
+/*package com.test.editor.controller;
 
 import javax.servlet.http.HttpSession;
 
@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class SettingsController {
 
-	private final SettingsDAO dao;
+    private final SettingsDAO dao;
 
 	@GetMapping("/settings")
 	public String getSettingsPage() {
@@ -41,7 +41,7 @@ public class SettingsController {
 	public String updateTheme(@RequestBody ThemeDTO theme, HttpSession session) {
 				
 		String member_seq = "1";
-		theme.setMember_seq(member_seq);
+		//theme.setMember_seq(member_seq);
 		
 		System.out.println(theme.toString());
 		
@@ -68,7 +68,7 @@ public class SettingsController {
 
 
 
-
+*/
 
 
 

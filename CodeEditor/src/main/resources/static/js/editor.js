@@ -330,5 +330,28 @@ $(document).ready(function() {
     getThemeData();
 });
 
+// 익스플로러 사이드 탭 
+let clickCount = 0;
+	
+	document.querySelector('.explorer_sidetabButton').addEventListener('click', function() {
+	    clickCount++;
+	
+	    const sidebar = document.querySelector('.explorer_sidebar');
+	    const sidetab = document.querySelector('.explorer_sidetab');
+	
+	    if (clickCount === 1) {
+	        // 첫 번째 클릭: 사이드바 확장 (400px)
+	        sidebar.classList.add('expanded');
+	        sidetab.classList.add('expanded');
+	    } else if (clickCount === 2) {
+	        // 두 번째 클릭: 사이드바 숨기기
+	        sidebar.classList.remove('expanded');
+	        sidetab.classList.remove('expanded');
+	        clickCount = 0; // 클릭 횟수 초기화
+	    }
+	});
 
+	
+	
+	
 
